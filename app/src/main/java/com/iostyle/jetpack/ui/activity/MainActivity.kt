@@ -14,9 +14,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
         bottom_navigation.setupWithNavController(nav_host_fragment.findNavController())
+
+        // 跳转
+//        nav_host_fragment.findNavController().navigate(R.id.messageFragment)
     }
 
     override fun onSupportNavigateUp(): Boolean {
         return findNavController(R.id.nav_host_fragment).navigateUp()
+    }
+
+    override fun onBackPressed() {
+//        super.onBackPressed()
     }
 }
