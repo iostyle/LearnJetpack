@@ -3,17 +3,13 @@ package com.iostyle.jetpack.ui.activity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.setupWithNavController
 import com.iostyle.jetpack.R
-import kotlinx.android.synthetic.main.main_activity.*
 
-class MainActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_activity)
-        bottom_navigation.setupWithNavController(nav_host_fragment.findNavController())
+        setContentView(R.layout.splash_activity)
     }
 
     override fun onSupportNavigateUp(): Boolean {
